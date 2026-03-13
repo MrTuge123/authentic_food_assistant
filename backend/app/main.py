@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from app.reddit_client import search_reddit
 
 app = FastAPI()
 
@@ -8,18 +9,9 @@ def root():
 
 @app.get("/search")
 def search_restaurants(query: str):
+    posts = search_reddit(query)
+
     return {
         "query": query,
-        "results": [
-            {
-                "name": "Palace Tang",
-                "score": 2.5,
-                "reason": "Frequently recommended by locals"
-            },
-            {
-                "name": "Slurping Turtle",
-                "score": 1,
-                "reason": "Commonly mentioned in community discussions"
-            }
-        ]
+        "reddit_posts": posts
     }
