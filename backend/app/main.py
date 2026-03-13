@@ -2,13 +2,13 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get('/')
+@app.get("/")
 def root():
     return {"message": "Authentic Food Assistant API is running"}
 
 @app.get("/search")
 def search_restaurants(query: str):
-    return{
+    return {
         "query": query,
         "results": [
             {
