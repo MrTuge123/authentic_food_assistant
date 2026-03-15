@@ -1,10 +1,22 @@
 import requests
 import re
 from .extraction import extract_structured
+from .llm_extraction import extract_structured_with_llm
 
 HEADERS = {"User-Agent": "authentic-food-assistant/0.1"}
 SESSION = requests.Session()
 SESSION.headers.update(HEADERS)
+
+
+def _extract_structured_for_post(title: str, comments, use_llm: bool = False):
+    if not use_llm:
+        return extract_structured(title, comments), None
+
+    try:
+        return extract_structured_with_llm(title, comments), None
+    except Exception as exc:
+        fallback = extract_structured(title, comments)
+        return fallback, str(exc)
 
 FOOD_TERMS = {
     "restaurant",
@@ -247,7 +259,7 @@ def get_comments(permalink: str, limit: int = 5):
 
     return comments
 
-def search_reddit(query: str, limit: int = 15, debug: bool = False):
+def search_reddit(query: str, limit: int = 15, debug: bool = False, use_llm: bool = False):
     url = "https://www.reddit.com/search.json"
     params = {"q": query, "limit": limit, "sort": "relevance", "t": "year"}
 
@@ -324,31 +336,36 @@ def search_reddit(query: str, limit: int = 15, debug: bool = False):
                 )
             continue
 
-        structured = extract_structured(title, comments)
+        structured, llm_error = _extract_structured_for_post(title, comments, use_llm=use_llm)
         if not structured.get("restaurant_candidates"):
             if debug:
-                debug_filters.append(
-                    {
-                        "title": title,
-                        "subreddit": subreddit,
-                        "reason": "no_restaurant_candidates",
-                        "food_relevance_score": relevance_score,
-                        "location_score": location_score,
-                    }
-                )
+                debug_item = {
+                    "title": title,
+                    "subreddit": subreddit,
+                    "reason": "no_restaurant_candidates",
+                    "food_relevance_score": relevance_score,
+                    "location_score": location_score,
+                }
+                if llm_error:
+                    debug_item["llm_error"] = llm_error
+                debug_filters.append(debug_item)
             continue
 
-        posts.append({
+        post_item = {
             "title": title,
             "subreddit": subreddit,
             "score": p.get("score", 0),
             "relevance_score": relevance_score,
             "location_score": location_score,
             "subreddit_match": subreddit_match,
+            "extraction_mode": "llm" if use_llm and not llm_error else "heuristic",
             "comments": comments,
             "url": f"https://www.reddit.com{permalink}",
             "structured": structured
-        })
+        }
+        if debug and llm_error:
+            post_item["llm_error"] = llm_error
+        posts.append(post_item)
 
     posts.sort(
         key=lambda post: (
