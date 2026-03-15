@@ -1,0 +1,982 @@
+{
+  "query": "authentic ramen places ann arbor",
+  "use_llm": true,
+  "restaurants": [
+    {
+      "name": "Bellflower",
+      "score": 2.16,
+      "mention_count": 2,
+      "post_count": 2,
+      "sentiment": "positive",
+      "dishes": [],
+      "location_hints": [
+        "Ann Arbor",
+        "Ypsilanti"
+      ],
+      "subreddits": [
+        "AnnArbor"
+      ],
+      "evidence": [
+        "if you haven't made it to Bellflower yet, I recommend you do.",
+        "Bellflower in Ypsilanti."
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/AnnArbor/comments/1pgo8x2/its_been_a_bit_best_sandwich_in_ann_arbor/",
+        "https://www.reddit.com/r/AnnArbor/comments/1rmy4ef/solo_dinner_date_spots_in_ann_arbor/"
+      ]
+    },
+    {
+      "name": "Ippudo",
+      "score": 1.95,
+      "mention_count": 3,
+      "post_count": 1,
+      "sentiment": "positive",
+      "dishes": [
+        "ramen"
+      ],
+      "location_hints": [],
+      "subreddits": [
+        "PHFoodPorn"
+      ],
+      "evidence": [
+        "Mendokoro, Ippudo and Ramen Nagi are the three best places for ramen.",
+        "mendokoro ramenba and ippudo"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/PHFoodPorn/comments/1li72or/whats_your_favorite_ramen_place/"
+      ]
+    },
+    {
+      "name": "Mendokoro",
+      "score": 1.95,
+      "mention_count": 2,
+      "post_count": 1,
+      "sentiment": "positive",
+      "dishes": [
+        "ramen"
+      ],
+      "location_hints": [],
+      "subreddits": [
+        "PHFoodPorn"
+      ],
+      "evidence": [
+        "Mendokoro, Ippudo and Ramen Nagi are the three best places for ramen.",
+        "mendokoro ramenba and ippudo"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/PHFoodPorn/comments/1li72or/whats_your_favorite_ramen_place/"
+      ]
+    },
+    {
+      "name": "Boteyju",
+      "score": 1.9,
+      "mention_count": 2,
+      "post_count": 1,
+      "sentiment": "negative",
+      "dishes": [
+        "ramen"
+      ],
+      "location_hints": [],
+      "subreddits": [
+        "PHFoodPorn"
+      ],
+      "evidence": [
+        "I think the worst thing to order in Boteyju is their ramen.",
+        "hindi Botejyu, parang mas sulit pa pera ko sa KyuKyu Ramen kesa dito ee"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/PHFoodPorn/comments/1li72or/whats_your_favorite_ramen_place/"
+      ]
+    },
+    {
+      "name": "Ramen Nagi",
+      "score": 1.9,
+      "mention_count": 1,
+      "post_count": 1,
+      "sentiment": "positive",
+      "dishes": [
+        "ramen"
+      ],
+      "location_hints": [],
+      "subreddits": [
+        "PHFoodPorn"
+      ],
+      "evidence": [
+        "Mendokoro, Ippudo and Ramen Nagi are the three best places for ramen."
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/PHFoodPorn/comments/1li72or/whats_your_favorite_ramen_place/"
+      ]
+    },
+    {
+      "name": "KyuKyu Ramen",
+      "score": 1.85,
+      "mention_count": 1,
+      "post_count": 1,
+      "sentiment": "positive",
+      "dishes": [
+        "ramen"
+      ],
+      "location_hints": [],
+      "subreddits": [
+        "PHFoodPorn"
+      ],
+      "evidence": [
+        "parang mas sulit pa pera ko sa KyuKyu Ramen kesa dito ee"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/PHFoodPorn/comments/1li72or/whats_your_favorite_ramen_place/"
+      ]
+    },
+    {
+      "name": "Ramen Kuroda",
+      "score": 1.8,
+      "mention_count": 1,
+      "post_count": 1,
+      "sentiment": "neutral",
+      "dishes": [
+        "ramen"
+      ],
+      "location_hints": [],
+      "subreddits": [
+        "PHFoodPorn"
+      ],
+      "evidence": [
+        "Ako lang ba Ramen Kuroda dito? 😅"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/PHFoodPorn/comments/1li72or/whats_your_favorite_ramen_place/"
+      ]
+    },
+    {
+      "name": "Kawa",
+      "score": 1.8,
+      "mention_count": 1,
+      "post_count": 1,
+      "sentiment": "positive",
+      "dishes": [
+        "ramen"
+      ],
+      "location_hints": [],
+      "subreddits": [
+        "PHFoodPorn"
+      ],
+      "evidence": [
+        "Kawa if nagtitipid"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/PHFoodPorn/comments/1li72or/whats_your_favorite_ramen_place/"
+      ]
+    },
+    {
+      "name": "Gumshara",
+      "score": 1.42,
+      "mention_count": 3,
+      "post_count": 1,
+      "sentiment": "positive",
+      "dishes": [
+        "tonkotsu broth",
+        "super thick tonkotsu"
+      ],
+      "location_hints": [
+        "Haymarket"
+      ],
+      "subreddits": [
+        "sydney"
+      ],
+      "evidence": [
+        "Kosuke Ramen (Concord) and Gumshara (Haymarket) are two places that cook their tonkotsu broth for 20+ hours.",
+        "Gumshara is famously thick similar to a Sendai style ramen"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/sydney/comments/1pw04p7/best_place_for_authentic_ramen/"
+      ]
+    },
+    {
+      "name": "Kosuke Ramen",
+      "score": 1.42,
+      "mention_count": 2,
+      "post_count": 1,
+      "sentiment": "positive",
+      "dishes": [
+        "tonkotsu broth",
+        "smoky broth"
+      ],
+      "location_hints": [
+        "Concord",
+        "Lane Cove"
+      ],
+      "subreddits": [
+        "sydney"
+      ],
+      "evidence": [
+        "Kosuke Ramen (Concord) and Gumshara (Haymarket) are two places that cook their tonkotsu broth for 20+ hours.",
+        "Kosuke has a uniquely smoky broth."
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/sydney/comments/1pw04p7/best_place_for_authentic_ramen/"
+      ]
+    }
+  ],
+  "reddit_posts": [
+    {
+      "title": "Moving from AZ to Ann Arbor soon and I'm worried I'm very unprepared",
+      "subreddit": "AnnArbor",
+      "score": 21,
+      "relevance_score": 4,
+      "location_score": 12,
+      "subreddit_match": true,
+      "extraction_mode": "llm",
+      "comments": [
+        "Take a lot of vitamin D3, especially in the winter. If you have a dog, the outdoor activities with your pet are AMAZING in Michigan. Trails, parks, rivers and lakes. ",
+        "Only two pieces of advice I can offer for this. First, lean into the outdoor winter sports. Even though it’s cloudy and cold it still feels good to be outside and move. Second, if you are able to do so, schedule 1-2 trips to sunnier places like FL or TX each year.",
+        "My office at work has no windows. I got a Lux lamp. One for seasonal affective disorder. It has made a huge difference in my winter mood.",
+        "hey friend, i'm disabled and audhd so i completely get the 'nothing to do' feeling. lots of the draw of the university and the city has to do with being in loud or crowded places and that is not my idea of a fun time! i've gotta shout out vertex coffee here. there are two locations, one in ypsi and one in ann arbor basically on central campus. they host lots of events/fundraisers that have been GREAT and i've met some really cool people. they also have the best bulletin boards for local groups and meet-ups (death cafes? queer power-lifting? clothing swaps? all of it!) if you like crafting, there's also the ann arbor library secret lab at the downtown location. they host all kinds of free classes and workshops that are drop-in and they teach you things like printmaking, laser engraving, risograph, even natural dye workshops. you don't even need to have a library card.",
+        "Aren’t that many things to do? Ann Arbor has events going on literally every day. Visit annarborobserver.com to get a sense of things happening around town. The university is also a great resource for stuff to do (performances, sports, free lectures, etc)."
+      ],
+      "url": "https://www.reddit.com/r/AnnArbor/comments/1rcqibw/moving_from_az_to_ann_arbor_soon_and_im_worried/",
+      "structured": {
+        "restaurant_name": [
+          "Vertex Coffee"
+        ],
+        "restaurant_candidates": [
+          {
+            "name": "Vertex Coffee",
+            "normalized_name": "vertexcoffee",
+            "confidence": 0.9,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [
+              "Ann Arbor",
+              "Ypsilanti"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "i've gotta shout out vertex coffee here. there are two locations, one in ypsi and one in ann arbor basically on central campus."
+            ]
+          }
+        ],
+        "dish": [],
+        "location_hint": [
+          "Ann Arbor",
+          "Ypsilanti"
+        ],
+        "sentiment": "positive"
+      }
+    },
+    {
+      "title": "It’s been a bit…. best sandwich in Ann Arbor?",
+      "subreddit": "AnnArbor",
+      "score": 43,
+      "relevance_score": 8,
+      "location_score": 10,
+      "subreddit_match": true,
+      "extraction_mode": "llm",
+      "comments": [
+        "I'm not trying to push the definition of Ann Arbor, but if you haven't made it to Bellflower yet, I recommend you do. ",
+        "The chili crisp Focaccia Egg Sandwich at Q bakehouse is incredible!!",
+        "I love the tiny egg salad sandwiches at Yoon’s Bakery.\n\nAlso the 6’ party sub from Buscemi’s.\n\nBeef and taleggio at York also nice.\n\nClub sandwich at Old Town.\n\nSongbird Cafe breakfast sandwich.\n\nBut yeah, I’d probably put Dimo’s first, like others.",
+        "Biercamp - STEAMSHIP ROUND",
+        "Spiedo! That place is amazing."
+      ],
+      "url": "https://www.reddit.com/r/AnnArbor/comments/1pgo8x2/its_been_a_bit_best_sandwich_in_ann_arbor/",
+      "structured": {
+        "restaurant_name": [
+          "Bellflower",
+          "Q bakehouse",
+          "Yoon’s Bakery",
+          "Buscemi’s",
+          "York",
+          "Old Town",
+          "Songbird Cafe",
+          "Dimo’s",
+          "Biercamp",
+          "Spiedo"
+        ],
+        "restaurant_candidates": [
+          {
+            "name": "Bellflower",
+            "normalized_name": "bellflower",
+            "confidence": 0.8,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "if you haven't made it to Bellflower yet, I recommend you do."
+            ]
+          },
+          {
+            "name": "Q bakehouse",
+            "normalized_name": "qbakehouse",
+            "confidence": 0.9,
+            "mention_count": 1,
+            "dishes": [
+              "chili crisp Focaccia Egg Sandwich"
+            ],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "The chili crisp Focaccia Egg Sandwich at Q bakehouse is incredible!!"
+            ]
+          },
+          {
+            "name": "Yoon’s Bakery",
+            "normalized_name": "yoonsbakery",
+            "confidence": 0.85,
+            "mention_count": 1,
+            "dishes": [
+              "tiny egg salad sandwiches"
+            ],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "I love the tiny egg salad sandwiches at Yoon’s Bakery."
+            ]
+          },
+          {
+            "name": "Buscemi’s",
+            "normalized_name": "buscemis",
+            "confidence": 0.8,
+            "mention_count": 1,
+            "dishes": [
+              "6’ party sub"
+            ],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Also the 6’ party sub from Buscemi’s."
+            ]
+          },
+          {
+            "name": "York",
+            "normalized_name": "york",
+            "confidence": 0.8,
+            "mention_count": 1,
+            "dishes": [
+              "Beef and taleggio"
+            ],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Beef and taleggio at York also nice."
+            ]
+          },
+          {
+            "name": "Old Town",
+            "normalized_name": "oldtown",
+            "confidence": 0.8,
+            "mention_count": 1,
+            "dishes": [
+              "Club sandwich"
+            ],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Club sandwich at Old Town."
+            ]
+          },
+          {
+            "name": "Songbird Cafe",
+            "normalized_name": "songbirdcafe",
+            "confidence": 0.8,
+            "mention_count": 1,
+            "dishes": [
+              "breakfast sandwich"
+            ],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Songbird Cafe breakfast sandwich."
+            ]
+          },
+          {
+            "name": "Dimo’s",
+            "normalized_name": "dimos",
+            "confidence": 0.85,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "But yeah, I’d probably put Dimo’s first, like others."
+            ]
+          },
+          {
+            "name": "Biercamp",
+            "normalized_name": "biercamp",
+            "confidence": 0.7,
+            "mention_count": 1,
+            "dishes": [
+              "STEAMSHIP ROUND"
+            ],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Biercamp - STEAMSHIP ROUND"
+            ]
+          },
+          {
+            "name": "Spiedo",
+            "normalized_name": "spiedo",
+            "confidence": 0.8,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Spiedo! That place is amazing."
+            ]
+          }
+        ],
+        "dish": [
+          "chili crisp Focaccia Egg Sandwich",
+          "tiny egg salad sandwiches",
+          "6’ party sub",
+          "Beef and taleggio",
+          "Club sandwich"
+        ],
+        "location_hint": [
+          "Ann Arbor"
+        ],
+        "sentiment": "positive"
+      }
+    },
+    {
+      "title": "Black Owned restaurants in Ann Arbor?",
+      "subreddit": "AnnArbor",
+      "score": 15,
+      "relevance_score": 7,
+      "location_score": 10,
+      "subreddit_match": true,
+      "extraction_mode": "llm",
+      "comments": [
+        "obligatory shoutout for a jamaican jerk pit mention -- best food in town over many years.",
+        "Khadi's cuisine on cross in Ypsi has West African food that's super good. Taste of Soul is the shit too",
+        "Fat Daddy’s Hot Chicken",
+        "Pretty sure 24th cheesecake is at briarwood.",
+        "You had me at jamacian jersey pit, the food is fantastic!"
+      ],
+      "url": "https://www.reddit.com/r/AnnArbor/comments/1qiamt7/black_owned_restaurants_in_ann_arbor/",
+      "structured": {
+        "restaurant_name": [
+          "Jamaican Jerk Pit",
+          "Khadi's Cuisine",
+          "Taste of Soul",
+          "Fat Daddy’s Hot Chicken",
+          "24th Cheesecake"
+        ],
+        "restaurant_candidates": [
+          {
+            "name": "Jamaican Jerk Pit",
+            "normalized_name": "jamaicanjerkpit",
+            "confidence": 0.9,
+            "mention_count": 2,
+            "dishes": [],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "obligatory shoutout for a jamaican jerk pit mention -- best food in town over many years.",
+              "You had me at jamacian jersey pit, the food is fantastic!"
+            ]
+          },
+          {
+            "name": "Khadi's Cuisine",
+            "normalized_name": "khadiscuisine",
+            "confidence": 0.85,
+            "mention_count": 1,
+            "dishes": [
+              "West African food"
+            ],
+            "location_hints": [
+              "Ypsi"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Khadi's cuisine on cross in Ypsi has West African food that's super good."
+            ]
+          },
+          {
+            "name": "Taste of Soul",
+            "normalized_name": "tasteofsoul",
+            "confidence": 0.8,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [],
+            "sentiment": "positive",
+            "evidence": [
+              "Taste of Soul is the shit too"
+            ]
+          },
+          {
+            "name": "Fat Daddy’s Hot Chicken",
+            "normalized_name": "fatdaddyshotchicken",
+            "confidence": 0.8,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [],
+            "sentiment": "neutral",
+            "evidence": [
+              "Fat Daddy’s Hot Chicken"
+            ]
+          },
+          {
+            "name": "24th Cheesecake",
+            "normalized_name": "24thcheesecake",
+            "confidence": 0.7,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [
+              "Briarwood"
+            ],
+            "sentiment": "neutral",
+            "evidence": [
+              "Pretty sure 24th cheesecake is at briarwood."
+            ]
+          }
+        ],
+        "dish": [
+          "West African food"
+        ],
+        "location_hint": [
+          "Ann Arbor",
+          "Ypsi",
+          "Briarwood"
+        ],
+        "sentiment": "positive"
+      }
+    },
+    {
+      "title": "Might be moving to Ann Arbor. I'm excited!!",
+      "subreddit": "AnnArbor",
+      "score": 115,
+      "relevance_score": 6,
+      "location_score": 10,
+      "subreddit_match": true,
+      "extraction_mode": "llm",
+      "comments": [
+        "I love AA! Lots of walkable areas to downtown. Housing and taxes are both pretty expensive for the Midwest but I feel like it's starting to come down a bit. \n\nWhen I was looking at moving for a job I loved looking at house listings to imagine it better. Walkable areas are Water hill ( west of Kerrytown) , old West side (west of downtown) . I'd consider anything east of 7th easily walkable. On the other side of AA burns park is a favorite, I think Northside is a real gem (Lower town Cafe seems like it's really anchoring that neighborhood). \n\nTraffic can be frustratingly slow through downtown but nothing like a big city. We manage to bike 9 months a year to many of our activities and it makes accessing downtown so much easier.",
+        "Sports are not that crazy.   Traffic is bad on football Saturdays,  but otherwise...no big deal. \n\nHousing is the challenge.   Take your time to find a place in the right neighborhood. \n\nIf you liked Wisconsin,  weather here is no problem.  Gray, of course, all winter..but spring and fall are gorgeous!",
+        "Check out the area in and around Plymouth and Green. It is on a bus route for easy access to A2. Nice area with some restaurants, coffee shops and grocery, plus a super walkable area with nature trails. A2 is fairly easy to navigate without a car thanks to its bus systems and while not perfect it is a pedestrian friendly area.",
+        "There's a quietly walkable and slightly more affordable area in A2, which is the neighborhoods to the southwest of Trader Joe's. You can be in walking distance of TJs, three (soon to be four) coffee shops, and Mallet's Creek library, as long as \"about a mile\" counts as walking distance for you. Packard Row is a newly built apartment complex seated perfectly for that, although if you want to be closer to the library, maybe The Ponds would be better.\n\nI moved here from Phoenix about 7 years ago and I'm never leaving. I love it here.",
+        "Welcome back to the Midwest!\n\nA2 has a good bus system relative to the size of the town, so your housing search might include a careful look at bus lines.  If your partner’s MichMed gig is at the hospital, planning on a bus to the hospital is also a good idea — paying to park to go to work is… irritating.\n\nWinter is less a thing than it was even 20 years ago, but we get relatively little snow as compared to lake effect or even areas close by.  Compared to MKE, it ain’t a thing.\n\nOne particular detail: waste not one moment getting a library card.  Sounds silly, I know, but the AADL is a kick-ass library system, and you can borrow tools, games, wall art… the breadth of the collections is impressive… plus librarians are cool people!"
+      ],
+      "url": "https://www.reddit.com/r/AnnArbor/comments/1oet5a9/might_be_moving_to_ann_arbor_im_excited/",
+      "structured": {
+        "restaurant_name": [
+          "Lower Town Cafe",
+          "Trader Joe's"
+        ],
+        "restaurant_candidates": [
+          {
+            "name": "Lower Town Cafe",
+            "normalized_name": "lowertowncafe",
+            "confidence": 0.85,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [
+              "Northside",
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Lower town Cafe seems like it's really anchoring that neighborhood"
+            ]
+          },
+          {
+            "name": "Trader Joe's",
+            "normalized_name": "traderjoes",
+            "confidence": 0.7,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "neutral",
+            "evidence": [
+              "neighborhoods to the southwest of Trader Joe's"
+            ]
+          }
+        ],
+        "dish": [],
+        "location_hint": [
+          "Ann Arbor",
+          "Northside"
+        ],
+        "sentiment": "positive"
+      }
+    },
+    {
+      "title": "Solo dinner date spots in Ann Arbor?",
+      "subreddit": "AnnArbor",
+      "score": 72,
+      "relevance_score": 6,
+      "location_score": 10,
+      "subreddit_match": true,
+      "extraction_mode": "llm",
+      "comments": [
+        "Grab a bar seat at Peridot.",
+        "Bellflower in Ypsilanti. ",
+        "Tomukun! The barbecue side has great entrees and they give free refills on bon chon. ",
+        "The Earle has a great vibe. ",
+        "I bartend at Tios, and I see a lot of people going solo at tables and at the bar. We're a pretty small and laid back place, and it's pretty easy to create whatever vibe you want. I have regulars who will sit at the bar and talk my ear off the entire time, and others who will say maybe 10 words to me. I love them all lol"
+      ],
+      "url": "https://www.reddit.com/r/AnnArbor/comments/1rmy4ef/solo_dinner_date_spots_in_ann_arbor/",
+      "structured": {
+        "restaurant_name": [
+          "Peridot",
+          "Bellflower",
+          "Tomukun",
+          "The Earle",
+          "Tios"
+        ],
+        "restaurant_candidates": [
+          {
+            "name": "Peridot",
+            "normalized_name": "peridot",
+            "confidence": 0.9,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [
+              "Ann Arbor"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Grab a bar seat at Peridot."
+            ]
+          },
+          {
+            "name": "Bellflower",
+            "normalized_name": "bellflower",
+            "confidence": 0.85,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [
+              "Ypsilanti"
+            ],
+            "sentiment": "neutral",
+            "evidence": [
+              "Bellflower in Ypsilanti."
+            ]
+          },
+          {
+            "name": "Tomukun",
+            "normalized_name": "tomukun",
+            "confidence": 0.9,
+            "mention_count": 1,
+            "dishes": [
+              "barbecue"
+            ],
+            "location_hints": [],
+            "sentiment": "positive",
+            "evidence": [
+              "Tomukun! The barbecue side has great entrees and they give free refills on bon chon."
+            ]
+          },
+          {
+            "name": "The Earle",
+            "normalized_name": "theearle",
+            "confidence": 0.85,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [],
+            "sentiment": "positive",
+            "evidence": [
+              "The Earle has a great vibe."
+            ]
+          },
+          {
+            "name": "Tios",
+            "normalized_name": "tios",
+            "confidence": 0.9,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [],
+            "sentiment": "positive",
+            "evidence": [
+              "I bartend at Tios, and I see a lot of people going solo at tables and at the bar."
+            ]
+          }
+        ],
+        "dish": [
+          "barbecue"
+        ],
+        "location_hint": [
+          "Ann Arbor",
+          "Ypsilanti"
+        ],
+        "sentiment": "positive"
+      }
+    },
+    {
+      "title": "Best place for authentic Ramen",
+      "subreddit": "sydney",
+      "score": 93,
+      "relevance_score": 13,
+      "location_score": 2,
+      "subreddit_match": false,
+      "extraction_mode": "llm",
+      "comments": [
+        "Kosuke Ramen (Concord) and Gumshara (Haymarket) are two places that cook their tonkotsu broth for 20+ hours. They both have very different styles though, Gumshara is famously thick similar to a Sendai style ramen while Kosuke has a uniquely smoky broth.",
+        "Gumshara, no fcuks given for sensitive palates. Salty king.",
+        "Ryos noodles in crows nest. This is my advice as a sydney person who now lives in japan.",
+        "Gumshara for super thick tokotsu. \n\nMenya in Haymarket does a great tonkotsu and also offers tori base. \n\nThey’re the closest ones I can find in Sydney that were anything like the places I tried in Fukuoka.",
+        "Kosuke Ramen in Lane Cove."
+      ],
+      "url": "https://www.reddit.com/r/sydney/comments/1pw04p7/best_place_for_authentic_ramen/",
+      "structured": {
+        "restaurant_name": [
+          "Kosuke Ramen",
+          "Gumshara",
+          "Ryos noodles",
+          "Menya"
+        ],
+        "restaurant_candidates": [
+          {
+            "name": "Kosuke Ramen",
+            "normalized_name": "kosukeramen",
+            "confidence": 0.95,
+            "mention_count": 2,
+            "dishes": [
+              "tonkotsu broth",
+              "smoky broth"
+            ],
+            "location_hints": [
+              "Concord",
+              "Lane Cove"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Kosuke Ramen (Concord) and Gumshara (Haymarket) are two places that cook their tonkotsu broth for 20+ hours.",
+              "Kosuke has a uniquely smoky broth.",
+              "Kosuke Ramen in Lane Cove."
+            ]
+          },
+          {
+            "name": "Gumshara",
+            "normalized_name": "gumshara",
+            "confidence": 0.95,
+            "mention_count": 3,
+            "dishes": [
+              "tonkotsu broth",
+              "super thick tonkotsu"
+            ],
+            "location_hints": [
+              "Haymarket"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Kosuke Ramen (Concord) and Gumshara (Haymarket) are two places that cook their tonkotsu broth for 20+ hours.",
+              "Gumshara is famously thick similar to a Sendai style ramen",
+              "Gumshara, no fcuks given for sensitive palates. Salty king."
+            ]
+          },
+          {
+            "name": "Ryos noodles",
+            "normalized_name": "ryosnoodles",
+            "confidence": 0.7,
+            "mention_count": 1,
+            "dishes": [],
+            "location_hints": [
+              "Crows Nest"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Ryos noodles in crows nest. This is my advice as a sydney person who now lives in japan."
+            ]
+          },
+          {
+            "name": "Menya",
+            "normalized_name": "menya",
+            "confidence": 0.85,
+            "mention_count": 1,
+            "dishes": [
+              "tonkotsu",
+              "tori base"
+            ],
+            "location_hints": [
+              "Haymarket"
+            ],
+            "sentiment": "positive",
+            "evidence": [
+              "Menya in Haymarket does a great tonkotsu and also offers tori base."
+            ]
+          }
+        ],
+        "dish": [
+          "tonkotsu broth",
+          "smoky broth",
+          "super thick tonkotsu",
+          "tori base"
+        ],
+        "location_hint": [
+          "Concord",
+          "Haymarket",
+          "Lane Cove",
+          "Crows Nest",
+          "Sydney"
+        ],
+        "sentiment": "positive"
+      }
+    },
+    {
+      "title": "What’s your favorite ramen place?",
+      "subreddit": "PHFoodPorn",
+      "score": 671,
+      "relevance_score": 9,
+      "location_score": 2,
+      "subreddit_match": false,
+      "extraction_mode": "llm",
+      "comments": [
+        "I think the worst thing to order in Boteyju is their ramen. Lol. \n\nMendokoro, Ippudo and Ramen Nagi are the three best places for ramen.",
+        "Ako lang ba Ramen Kuroda dito? 😅",
+        "kahit ano basta hindi Botejyu, parang mas sulit pa pera ko sa KyuKyu Ramen kesa dito ee 🤣",
+        "mendokoro ramenba and ippudo",
+        "Ippudo if may budget. Kawa if nagtitipid"
+      ],
+      "url": "https://www.reddit.com/r/PHFoodPorn/comments/1li72or/whats_your_favorite_ramen_place/",
+      "structured": {
+        "restaurant_name": [
+          "Boteyju",
+          "Mendokoro",
+          "Ippudo",
+          "Ramen Nagi",
+          "Ramen Kuroda",
+          "KyuKyu Ramen",
+          "Kawa"
+        ],
+        "restaurant_candidates": [
+          {
+            "name": "Boteyju",
+            "normalized_name": "boteyju",
+            "confidence": 0.9,
+            "mention_count": 2,
+            "dishes": [
+              "ramen"
+            ],
+            "location_hints": [],
+            "sentiment": "negative",
+            "evidence": [
+              "I think the worst thing to order in Boteyju is their ramen.",
+              "hindi Botejyu, parang mas sulit pa pera ko sa KyuKyu Ramen kesa dito ee"
+            ]
+          },
+          {
+            "name": "Mendokoro",
+            "normalized_name": "mendokoro",
+            "confidence": 0.95,
+            "mention_count": 2,
+            "dishes": [
+              "ramen"
+            ],
+            "location_hints": [],
+            "sentiment": "positive",
+            "evidence": [
+              "Mendokoro, Ippudo and Ramen Nagi are the three best places for ramen.",
+              "mendokoro ramenba and ippudo"
+            ]
+          },
+          {
+            "name": "Ippudo",
+            "normalized_name": "ippudo",
+            "confidence": 0.95,
+            "mention_count": 3,
+            "dishes": [
+              "ramen"
+            ],
+            "location_hints": [],
+            "sentiment": "positive",
+            "evidence": [
+              "Mendokoro, Ippudo and Ramen Nagi are the three best places for ramen.",
+              "mendokoro ramenba and ippudo",
+              "Ippudo if may budget."
+            ]
+          },
+          {
+            "name": "Ramen Nagi",
+            "normalized_name": "ramennagi",
+            "confidence": 0.9,
+            "mention_count": 1,
+            "dishes": [
+              "ramen"
+            ],
+            "location_hints": [],
+            "sentiment": "positive",
+            "evidence": [
+              "Mendokoro, Ippudo and Ramen Nagi are the three best places for ramen."
+            ]
+          },
+          {
+            "name": "Ramen Kuroda",
+            "normalized_name": "ramenkuroda",
+            "confidence": 0.8,
+            "mention_count": 1,
+            "dishes": [
+              "ramen"
+            ],
+            "location_hints": [],
+            "sentiment": "neutral",
+            "evidence": [
+              "Ako lang ba Ramen Kuroda dito? 😅"
+            ]
+          },
+          {
+            "name": "KyuKyu Ramen",
+            "normalized_name": "kyukyuramen",
+            "confidence": 0.85,
+            "mention_count": 1,
+            "dishes": [
+              "ramen"
+            ],
+            "location_hints": [],
+            "sentiment": "positive",
+            "evidence": [
+              "parang mas sulit pa pera ko sa KyuKyu Ramen kesa dito ee"
+            ]
+          },
+          {
+            "name": "Kawa",
+            "normalized_name": "kawa",
+            "confidence": 0.8,
+            "mention_count": 1,
+            "dishes": [
+              "ramen"
+            ],
+            "location_hints": [],
+            "sentiment": "positive",
+            "evidence": [
+              "Kawa if nagtitipid"
+            ]
+          }
+        ],
+        "dish": [
+          "ramen"
+        ],
+        "location_hint": [],
+        "sentiment": "positive"
+      }
+    }
+  ]
+}

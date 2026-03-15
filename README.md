@@ -1,101 +1,152 @@
 # Authentic Local Restaurant Discovery App
 
-This project is an early backend prototype for an authenticity-first restaurant recommendation app.
+This project is a backend prototype for a restaurant recommendation system that prioritizes community knowledge over ad-driven ranking.
 
-Instead of relying on ad-driven ranking from review platforms, the goal is to find restaurants that locals genuinely recommend in community discussions. A user should be able to ask for something like `authentic ramen near downtown Seattle`, and the system should retrieve relevant discussions, extract restaurant signals, and return clear recommendations with supporting evidence.
+Instead of relying on traditional review platforms, the system searches local discussion content, extracts restaurant mentions, and returns evidence-backed recommendations. The goal is to help users discover places that locals genuinely talk about, not just places that rank well commercially.
 
-## Project Goal
+## Goal
 
-Build a mobile or web application that helps users discover authentic local restaurants by mining community discussions rather than sponsored listings.
+Build a web or mobile app that can answer queries such as:
 
-Core workflow:
+`authentic ramen near downtown Seattle`
 
-1. Accept a natural-language restaurant query.
-2. Search community sources such as Reddit for relevant local discussions.
-3. Extract restaurant names, dishes, and location hints from posts and comments.
-4. Map restaurant mentions to real places.
-5. Rank results using authenticity and relevance signals.
-6. Generate concise summaries explaining why each place is recommended.
+The intended pipeline is:
 
-## Current Status
+1. Accept a natural-language food query.
+2. Search community discussions for relevant posts.
+3. Extract restaurant names, dishes, and location clues from those discussions.
+4. Aggregate and rank restaurant candidates.
+5. Eventually resolve them to real places and show them on a map.
 
-The repository currently contains a small FastAPI backend MVP with:
+## What Works Today
 
-- A root health endpoint.
-- A `/search` endpoint that accepts a query string.
-- Reddit search using Reddit's public JSON endpoints.
-- Comment fetching for matching Reddit posts.
-- Lightweight rule-based extraction for restaurant names, dishes, location hints, and coarse sentiment.
+The current repository contains a FastAPI backend that already does the following:
 
-Current backend files:
+- accepts restaurant-related queries through `/search`
+- searches Reddit using Reddit's public JSON endpoints
+- fetches top-level comments for matched posts
+- filters posts by food and location relevance
+- extracts restaurant candidates from titles and comments
+- supports both:
+  - a heuristic extractor
+  - an optional GPT-based extractor using `gpt-4.1-mini`
+- returns:
+  - restaurant candidates
+  - supporting evidence snippets
+  - dish mentions
+  - location hints
+  - raw Reddit posts for debugging
+
+This is still a prototype. It is not yet a full recommendation product.
+
+## Current Architecture
+
+`FastAPI -> Reddit search -> Comment fetch -> Extraction -> Aggregation -> JSON response`
+
+Core files:
 
 - [`backend/app/main.py`](/Users/tiger.c/Desktop/food_planning_chatbot/backend/app/main.py)
 - [`backend/app/reddit_client.py`](/Users/tiger.c/Desktop/food_planning_chatbot/backend/app/reddit_client.py)
 - [`backend/app/extraction.py`](/Users/tiger.c/Desktop/food_planning_chatbot/backend/app/extraction.py)
+- [`backend/app/llm_extraction.py`](/Users/tiger.c/Desktop/food_planning_chatbot/backend/app/llm_extraction.py)
 
-## Current Architecture
+## API
 
-`FastAPI endpoint -> Reddit search -> Comment fetch -> Structured extraction -> JSON response`
+### Health Check
 
-Today, the system returns Reddit posts and extracted fields. It does not yet perform place resolution, ranking, vector retrieval, Xiaohongshu ingestion, or LLM summarization.
+`GET /`
 
-## Example API Behavior
+Returns a simple status message.
 
-`GET /search?query=authentic+ramen+in+Seattle`
+### Search
 
-The API currently returns JSON with:
+`GET /search?query=best+pho+houston`
 
-- The original query
-- Matching Reddit posts
-- Post metadata such as subreddit and score
-- A small set of fetched comments
-- Extracted structured signals
+Supported query params:
 
-Example extracted fields:
+- `query`: natural-language food query
+- `limit`: number of Reddit search hits to fetch before filtering, default `15`
+- `debug`: include filter/debug metadata, default `false`
+- `use_llm`: use GPT-based extraction instead of heuristic extraction, default `false`
 
-- `restaurant_name`
-- `dish`
-- `location_hint`
+Example URLs:
+
+- [http://127.0.0.1:8000/search?query=authentic+ramen+in+Seattle](http://127.0.0.1:8000/search?query=authentic+ramen+in+Seattle)
+- [http://127.0.0.1:8000/search?query=authentic+ramen+in+Seattle&debug=true](http://127.0.0.1:8000/search?query=authentic+ramen+in+Seattle&debug=true)
+- [http://127.0.0.1:8000/search?query=authentic+ramen+in+Seattle&use_llm=true](http://127.0.0.1:8000/search?query=authentic+ramen+in+Seattle&use_llm=true)
+
+### Current Response Shape
+
+The backend currently returns JSON like:
+
+- `query`
+- `use_llm`
+- `restaurants`
+- `reddit_posts`
+- `debug_filters` when `debug=true`
+
+Each restaurant item may include:
+
+- `name`
+- `score`
+- `mention_count`
+- `post_count`
 - `sentiment`
+- `dishes`
+- `location_hints`
+- `subreddits`
+- `evidence`
+- `source_urls`
 
-## Local Setup
+## Setup
 
 ### Prerequisites
 
 - Python 3.12 recommended
 
-### Install dependencies
+### Install
 
 ```bash
 cd /Users/tiger.c/Desktop/food_planning_chatbot/backend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+export OPENAI_API_KEY="放你的open api key"
 python3 -m nltk.downloader vader_lexicon
 ```
 
 ### Run the API
 
 ```bash
-cd /Users/tiger.c/Desktop/food_planning_chatbot/backend
+cd "删掉引号，放你到/backend 这个folder的path"
+source venv/bin/activate
+export OPENAI_API_KEY="不删引号，放你的open api key"
 uvicorn app.main:app --reload
+
 ```
 
 Then open:
 
 - [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-- [http://127.0.0.1:8000/search?query=authentic+ramen+in+Seattle](http://127.0.0.1:8000/search?query=authentic+ramen+in+Seattle)
-- [http://127.0.0.1:8000/search?query=authentic+ramen+in+Seattle&use_llm=true](http://127.0.0.1:8000/search?query=authentic+ramen+in+Seattle&use_llm=true)
+- [http://127.0.0.1:8000/search?query=best+sushi+ann+arbor](http://127.0.0.1:8000/search?query=best+sushi+ann+arbor)
 
-### LLM Extraction Setup
+## Optional LLM Extraction
 
-The repository also includes [`backend/app/llm_extraction.py`](/Users/tiger.c/Desktop/food_planning_chatbot/backend/app/llm_extraction.py), which uses `gpt-4.1-mini` for extraction.
+The project includes an alternative extractor in [`backend/app/llm_extraction.py`](/Users/tiger.c/Desktop/food_planning_chatbot/backend/app/llm_extraction.py) that uses `gpt-4.1-mini`.
 
-Set your API key as an environment variable before using it:
+To enable it:
 
 ```bash
 export OPENAI_API_KEY="your_api_key_here"
 ```
+
+Then call:
+
+```text
+/search?query=authentic+ramen+in+Seattle&use_llm=true
+```
+
+If the LLM path fails, the backend currently falls back to the heuristic extractor.
 
 ## Tests
 
@@ -106,25 +157,33 @@ cd /Users/tiger.c/Desktop/food_planning_chatbot
 python3 -m unittest discover backend/tests
 ```
 
-## Near-Term Roadmap
+The tests currently cover:
 
-Suggested next steps for the MVP:
+- extraction false positives
+- short-name recall
+- acronym and location filtering
+- Reddit retrieval heuristics
+- LLM fallback behavior
 
-1. Add request validation and better error handling.
-2. Normalize and deduplicate extracted restaurant names across posts.
-3. Resolve restaurant entities with a maps or places API.
-4. Add a scoring layer based on mention frequency, unique users, recency, and relevance.
-5. Introduce LLM-based extraction and recommendation summarization.
-6. Add persistence, caching, and tests.
-7. Build a simple web or mobile UI.
+## What Is Still Missing
 
-## Research Direction
+The current backend is good enough to prove the idea, but the full app still needs:
 
-This project can also support a thesis or research direction around authenticity-aware recommendation from social discussion platforms:
+- stronger restaurant ranking
+- better duplicate/entity resolution
+- real place resolution through a maps/places API
+- richer recommendation summaries
+- more sources beyond Reddit
+- frontend or mobile UI
 
-- How to identify trustworthy local recommendations in noisy community data
-- How to rank authenticity without relying on sponsored content
-- How LLMs can summarize evidence-backed recommendations transparently
+## Recommended Next Steps
+
+The highest-value next steps are:
+
+1. Improve ranking so the best restaurants consistently appear first.
+2. Build a small evaluation dataset of real user queries and expected good outcomes.
+3. Resolve extracted restaurant names to real businesses.
+4. Add recommendation summaries once ranking is stable.
 
 ## License
 
